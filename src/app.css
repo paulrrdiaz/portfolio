@@ -1,0 +1,71 @@
+.app-container {
+}
+
+.app-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.app-title {
+  font-size: 4rem;
+  margin-bottom: 60px;
+}
+
+.app-title span {
+  color: #2574A9;
+}
+
+.app-subtitle {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.app-bullshit {
+  font-size: 2rem;
+}
+
+@keyframes code-animation-1 {
+  0%   { opacity: .05; }
+  50%  { opacity: 0; }
+  100% { opacity: .05; }
+}
+
+@keyframes code-animation-2 {
+  0%   { opacity: 0; }
+  50%  { opacity: .05; }
+  100% { opacity: 0; }
+}
+
+.code {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: -8px;
+  top: -8px;
+  z-index: 0;
+}
+
+.code p {
+  text-align: center;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.code-1 {
+  animation: code-animation-1 1s infinite;
+}
+
+.code-2 {
+  animation: code-animation-2 1s infinite;
+}
